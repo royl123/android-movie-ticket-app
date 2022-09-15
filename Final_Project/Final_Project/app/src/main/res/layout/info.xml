@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <Spinner
+        android:id="@+id/selectTimes"
+        android:layout_width="131dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="332dp"
+        android:background="#00FF00"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/confirming"
+        android:layout_width="431dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="272dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#00FF00"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/moviePick"
+        android:layout_width="397dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:textColor="#FFFF00"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:layout_width="247dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moviePick"
+        app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="62dp"
+        android:text="   Select a time below for today"
+        android:textColor="#FFFF00"
+        app:layout_constraintBottom_toBottomOf="@+id/selectTimes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moviePoster"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <Button
+        android:id="@+id/toCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Checkout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirming"
+        app:layout_constraintVertical_bias="0.746" />
+
+    <TextView
+        android:id="@+id/prices"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:text="General: $14.75 Child: $11.00"
+        android:textColor="#FFFF00"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
+
+    <Button
+        android:id="@+id/minus2"
+        android:layout_width="44dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="24dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minus" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <Button
+        android:id="@+id/plus2"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <TextView
+        android:id="@+id/kids"
+        android:layout_width="53dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus2"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/minus2"
+        app:layout_constraintTop_toBottomOf="@+id/general"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="57dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
